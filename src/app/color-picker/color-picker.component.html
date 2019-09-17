@@ -1,0 +1,5 @@
+<div
+    *ngFor="let color of colors; let index = index;"
+    class="color"
+    [ngStyle]="{ 'background-color': color }"
+    (click)="setActiveColor(index);"></div>

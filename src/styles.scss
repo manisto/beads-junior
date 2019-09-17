@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+app-board {
+    display: inline-block;
+    border: 1pt solid black;
+    background-color: #aaa;
+}
+
+.row {
+    overflow: auto;
+}
+
+.peg {
+    border-style: solid;
+    border-width: 1.5mm;
+    width: 5mm;
+    height: 5mm;
+    border-radius: 5mm;
+    border-color: #ddd;
+    background-color: #fff;
+    float: left;
+}
+
+app-color-picker {
+    display: block;
+}
+
+.color {
+    display: inline-block;
+    width: 10mm;
+    height: 10mm;
+}
+
+.peg.color-1 {
+    border-color: #ffa500;
+}

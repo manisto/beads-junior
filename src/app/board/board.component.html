@@ -1,0 +1,8 @@
+<div class="row" *ngFor="let row of board.rows">
+    <div
+        class="peg"
+        *ngFor="let peg of row.pegs; let pegIndex = index"
+        (dragstart)="preventEvent($event);"
+        (mousemove)="pegEntered($event, row, pegIndex);"
+        [ngStyle]="{ 'border-color': colors[peg] }"></div>
+</div>
