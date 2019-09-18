@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Board } from '../shared/board';
 import { Row } from "../shared/row";
+import { Style } from '../shared/style';
 
 @Component({
   selector: 'app-board',
@@ -11,7 +12,7 @@ export class BoardComponent implements OnInit {
   private board: Board;
 
   @Input() activeColor: number;
-  @Input() colors: string[];
+  @Input() colors: Style[];
 
   constructor() { }
 

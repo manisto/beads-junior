@@ -19,7 +19,6 @@ app-board {
     height: 5mm;
     border-radius: 5mm;
     border-color: #ddd;
-    background-color: #fff;
     float: left;
 }
 
@@ -31,6 +30,8 @@ app-color-picker {
     display: inline-block;
     width: 10mm;
     height: 10mm;
+    border-width: 5mm;
+    border-style: solid;
 }
 
 .peg.color-1 {
